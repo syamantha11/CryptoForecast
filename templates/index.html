@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+    
+        <title>CryptoCurrencies</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body style="margin-top: 10%">
+        
+        <h1 class="text-center">Forecast the Future</h1>
+        
+        <div class="container text-center">
+            <p class="lead">Choose the Cyrpto to find out the <small title="Approximate">approx.</small> Closing prices.</p>
+            <form action="/predict" method="post">
+                <div class="form-group">
+                    <div class="input-group" style="margin-left: 20%">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">To Forecast(Enter in Days)</span>
+                      </div>
+                      <input type="number" class="form-control" placeholder="To Forecast" aria-label="Username" aria-describedby="basic-addon1" name="No_of_days" style="margin-right: 35%; text-align: center">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend" style="margin-left: 20%">
+                            <span class="input-group-text" id="basic-addon1">Select One from the List&nbsp;&nbsp;</span>
+                          </div>
+                    <select class="form-control" style="margin-right: 15%; width:100px; text-align: center" id="selectedItem" name="selectItem" >
+<!--                        <option value="None" selected>Select One From Below</option>-->
+                        <option value="BTC">BitCoin-INR</option>
+                     </select>
+                        </div>
+                    </div>
+                </div> 
+                <button class="btn btn-primary" style="margin-top: 5px" type="submit">Let's Predict</button>
+            </form>
+        </div>
+    
+    </body>
+    
+</html>
